@@ -12,7 +12,10 @@ function Feed() {
 
   useEffect(() => {
     const data = fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
-    .then((data) => setVideos(data.items))
+    .then((data) => {
+      console.log(data.items)
+      setVideos(data.items)
+    })
   }, [selectedCategory]);
 
   return (
