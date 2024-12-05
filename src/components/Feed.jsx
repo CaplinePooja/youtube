@@ -12,6 +12,15 @@ const Feed = () => {
           Copyright 2022 JSM Media
         </Typography>
       </Box>
+
+      <Box>
+        <Typography variant='h4' 
+        fontweight= 'bold' mb={2} sx={{color: 'white'}}>
+          New <span style={{color: '#F31503'}}>
+           Video
+          </span>
+        </Typography>
+      </Box>
     </Stack>
   )
 }
